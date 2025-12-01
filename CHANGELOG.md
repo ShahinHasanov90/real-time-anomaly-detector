@@ -13,3 +13,4 @@
 - Added new configuration options (2025-11-21)
 - Improved logging and monitoring (2025-11-27)
 - Fixed Unicode handling for AZ/RU text (2025-11-27)
+- Updated API response format (2025-12-01)
