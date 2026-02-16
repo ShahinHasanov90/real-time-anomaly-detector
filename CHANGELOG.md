@@ -45,3 +45,4 @@
 - Fixed Unicode handling for AZ/RU text (2026-02-08)
 - Updated API response format (2026-02-09)
 - Added rate limiting (2026-02-13)
+- Fixed concurrent access issue (2026-02-16)
