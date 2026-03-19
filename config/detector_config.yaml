@@ -1,0 +1,44 @@
+kafka:
+  bootstrap_servers: "localhost:9092"
+  input_topic: "trade-events"
+  output_topic: "anomaly-alerts"
+  consumer_group: "anomaly-detector"
+  auto_offset_reset: "latest"
+  max_poll_records: 500
+  session_timeout_ms: 30000
+
+redis:
+  url: "redis://localhost:6379/0"
+  key_prefix: "anomaly:"
+  ttl_seconds: 86400
+
+detection:
+  zscore_threshold: 3.0
+  iqr_multiplier: 1.5
+  window_size: 1000
+  min_samples: 30
+  retrain_interval: 5000
+  contamination: 0.05
+  n_estimators: 100
+  features:
+    - "declared_value"
+    - "quantity"
+    - "weight_kg"
+    - "unit_price"
+
+alerting:
+  dedup_window_seconds: 300
+  severity_thresholds:
+    low: 2.0
+    medium: 3.0
+    high: 4.0
+    critical: 5.0
+  max_alerts_per_minute: 100
+
+metrics:
+  port: 8000
+  path: "/metrics"
+
+logging:
+  level: "INFO"
+  format: "json"
