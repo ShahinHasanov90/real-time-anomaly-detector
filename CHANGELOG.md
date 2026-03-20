@@ -1,53 +1,17 @@
 # Changelog
 
-- Fixed concurrent access issue (2025-11-03)
-- Improved test coverage (2025-11-03)
-- Added data export functionality (2025-11-04)
-- Fixed date parsing edge cases (2025-11-04)
-- Fixed edge case in data validation (2025-11-07)
-- Improved error handling for malformed input (2025-11-12)
-- Updated scoring algorithm weights (2025-11-12)
-- Added support for new data format (2025-11-19)
-- Optimized batch processing performance (2025-11-19)
-- Fixed memory leak in processor (2025-11-21)
-- Added new configuration options (2025-11-21)
-- Improved logging and monitoring (2025-11-27)
-- Fixed Unicode handling for AZ/RU text (2025-11-27)
-- Updated API response format (2025-12-01)
-- Added rate limiting (2025-12-03)
-- Fixed concurrent access issue (2025-12-09)
-- Improved test coverage (2025-12-11)
-- Added data export functionality (2025-12-11)
-- Fixed date parsing edge cases (2025-12-15)
-- Fixed edge case in data validation (2025-12-15)
-- Improved error handling for malformed input (2025-12-17)
-- Updated scoring algorithm weights (2025-12-22)
-- Added support for new data format (2025-12-26)
-- Optimized batch processing performance (2025-12-29)
-- Fixed memory leak in processor (2025-12-29)
-- Added new configuration options (2026-01-07)
-- Improved logging and monitoring (2026-01-07)
-- Fixed Unicode handling for AZ/RU text (2026-01-12)
-- Updated API response format (2026-01-15)
-- Added rate limiting (2026-01-18)
-- Fixed concurrent access issue (2026-01-18)
-- Improved test coverage (2026-01-23)
-- Added data export functionality (2026-01-27)
-- Fixed date parsing edge cases (2026-01-27)
-- Fixed edge case in data validation (2026-01-30)
-- Improved error handling for malformed input (2026-01-30)
-- Updated scoring algorithm weights (2026-02-02)
-- Added support for new data format (2026-02-02)
-- Optimized batch processing performance (2026-02-03)
-- Fixed memory leak in processor (2026-02-03)
-- Added new configuration options (2026-02-07)
-- Improved logging and monitoring (2026-02-08)
-- Fixed Unicode handling for AZ/RU text (2026-02-08)
-- Updated API response format (2026-02-09)
-- Added rate limiting (2026-02-13)
-- Fixed concurrent access issue (2026-02-16)
-- Improved test coverage (2026-02-18)
-- Added data export functionality (2026-02-23)
-- Fixed date parsing edge cases (2026-02-24)
-- Fixed edge case in data validation (2026-02-24)
-- Improved error handling for malformed input (2026-02-26)
+## [1.1.0] - 2026-02-20
+### Added
+- Online Isolation Forest with periodic incremental retraining
+- Prometheus metrics for latency, throughput, and model health
+- Alert deduplication with configurable time windows
+
+### Changed
+- Optimized sliding window computation for 3x throughput improvement
+
+## [1.0.0] - 2025-11-01
+### Added
+- Initial release: Kafka consumer with Z-score and IQR detection
+- Sliding window feature computation
+- Severity-tiered alerting (LOW/MEDIUM/HIGH/CRITICAL)
+- Docker Compose deployment stack
